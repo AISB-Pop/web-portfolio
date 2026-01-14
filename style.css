@@ -146,7 +146,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 60px 20px;
 }
@@ -245,14 +245,14 @@ p {
     overflow: hidden;
     background-color: #f5f5f5;
     border: 1px solid #e0e0e0;
+    height: 250px; /* Fixed height for consistency */
 }
 
 .project-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: cover;
-    min-height: 250px;
+    object-fit: cover; /* Maintain aspect ratio while filling container */
 }
 
 .project-content h3 {
@@ -307,6 +307,66 @@ p {
 
 .project-btn svg {
     flex-shrink: 0;
+}
+
+/* Skills Section */
+.skills {
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-category {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-list li {
+    padding: 6px 0;
+    color: #666;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skill-list li::before {
+    content: "•";
+    color: #1a1a1a;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 6px;
 }
 
 /* Certifications Detail Section */
@@ -509,6 +569,209 @@ footer p {
     }
 }
 
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 2% auto;
+    padding: 0;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.close {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+.modal-body {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-project-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+}
+
+.modal-project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    min-height: 250px;
+}
+
+.modal-project-details h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+    color: #1a1a1a;
+}
+
+.modal-project-details ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.modal-project-details li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.modal-project-details .project-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.modal-project-details .project-tech {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.modal-project-details .tech-tag {
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    background-color: #f5f5f5;
+    color: #666;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.modal-project-details .project-links {
+    margin-top: 20px;
+}
+
+.gallery-container {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.vertical-gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.vertical-gallery-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+.vertical-gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain; /* Show the full image without cropping */
+    display: block;
+    background-color: #f5f5f5; /* Light gray background to fill empty space */
+}
+
+.gallery-content {
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gallery-caption {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.gallery-explanation {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.modal-trigger {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-trigger:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -617,6 +880,25 @@ footer p {
         color: #8b949e;
     }
 
+    /* Skills Section Dark Mode */
+    .skill-category {
+        background-color: #161b22;
+        border: 1px solid #30363d;
+    }
+
+    .skill-category h3 {
+        color: #f0f6fc;
+        border-bottom: 1px solid #30363d;
+    }
+
+    .skill-list li {
+        color: #8b949e;
+    }
+
+    .skill-list li::before {
+        color: #f0f6fc;
+    }
+
     .contact-item {
         background-color: #161b22;
         color: #f0f6fc;
@@ -636,9 +918,141 @@ footer p {
         color: #6e7681;
     }
 
+    /* Modal Dark Mode */
+    .modal-content {
+        background-color: #161b22;
+        color: #c9d1d9;
+    }
+
+    .modal-header {
+        border-bottom: 1px solid #30363d;
+    }
+
+    .modal-header h2 {
+        color: #f0f6fc;
+    }
+
+    .close {
+        color: #8b949e;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #f0f6fc;
+    }
+
+    .modal-project-details h3 {
+        color: #f0f6fc;
+    }
+
+    .modal-project-details li {
+        color: #8b949e;
+    }
+
+    .modal-project-details .project-description {
+        color: #8b949e;
+    }
+
+    .modal-project-details .tech-tag {
+        background-color: #21262d;
+        color: #8b949e;
+    }
+
+    .gallery-item {
+        border: 1px solid #30363d;
+        background-color: #21262d;
+    }
+
+    .gallery-item:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-content {
+        background-color: #161b22;
+    }
+
+    .gallery-caption {
+        color: #f0f6fc;
+    }
+
+    .gallery-explanation {
+        color: #8b949e;
+    }
+
+    .modal-trigger:hover {
+        color: #58a6ff;
+    }
+
     @media (max-width: 480px) {
         .profile-photo {
             border: 3px solid #f0f6fc;
         }
     }
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox-caption {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.2s ease;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
+}
+
+/* Lightbox Dark Mode */
+.lightbox-caption {
+    color: #f0f6fc;
+}
+
+.lightbox-close {
+    color: #f0f6fc;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
 }
