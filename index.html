@@ -12,6 +12,7 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
             <a href="/resume.pdf" class="resume-download" download>Resume</a>
@@ -41,14 +42,66 @@
                     <p>FEU Roosevelt, Marikina</p>
                     <p class="date">Expected Graduation: June 2026</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="detail-item">
-                    <h3>Technical Skills</h3>
-                    <p><strong>Networking:</strong> TCP/IP, routing (OSPF, EIGRP), switching, VLANs, network troubleshooting</p>
-                    <p><strong>Network Automation:</strong> Python (Netmiko, Paramiko), Ansible, scripting</p>
-                    <p><strong>Network Tools:</strong> Wireshark, GNS3, SSH, SNMP, network monitoring</p>
-                    <p><strong>Operating Systems:</strong> Linux, Cisco IOS, basic Windows Server</p>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Networking</h3>
+                    <ul class="skill-list">
+                        <li>TCP/IP</li>
+                        <li>Routing (OSPF)</li>
+                        <li>Switching</li>
+                        <li>VLANs</li>
+                        <li>Network Troubleshooting</li>
+                        <li>Firewalls</li>                       
+                        
+                    </ul>
                 </div>
+
+                <div class="skill-category">
+                    <h3>Network Automation</h3>
+                    <ul class="skill-list">
+                        <li>Python (Netmiko, Paramiko)</li>
+                        <li>Ansible</li>
+                        <li>YAML</li>
+                        <li>REST APIs</li>
+                        <li>Configuration Management</li>                        
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Network Tools</h3>
+                    <ul class="skill-list">                        
+                        <li>GNS3</li>
+                        <li>Packet Tracer</li>
+                        <li>SSH</li>                        
+                        <li>Network Monitoring</li>
+                                                
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Operating Systems</h3>
+                    <ul class="skill-list">
+                        <li>Linux</li>
+                        <li>Windows</li>
+                                               
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Security</h3>
+                    <ul class="skill-list">
+                        <li>VPN</li>
+                        <li>Access Control Lists</li>
+                        <li>Network Segmentation</li>
+                        <li>Encryption</li>
+                        <li>Penetration Testing</li>
+                    </ul>
+                </div>                
             </div>
         </section>
 
@@ -56,16 +109,18 @@
             <h2>Projects</h2>
             <div class="project-item">
                 <div class="project-image">
-                    <img src="project1.png" alt="Automated Network Backup System">
+                    <img src="MonitoringServer/Logs/health-check.png" alt="Monitoring Server">
                 </div>
                 <div class="project-content">
-                    <h3>Automated Network Backup System</h3>
-                    <p class="project-description">Developed Python-based automation tool using Netmiko to automatically backup router and switch configurations across multiple Cisco devices. Implemented scheduled backups with version control and error handling for network configuration management.</p>
+                    <h3 class="modal-trigger" data-modal="backupModal">Server Monitoring</h3>
+                    <p class="project-description">Comprehensive Linux server monitoring solution featuring real-time system health reporting, performance analytics, and automated alerting. Implements custom scripts for monitoring CPU, memory, disk, and network usage with detailed logging and incident response capabilities.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Netmiko</span>
-                        <span class="tech-tag">Cisco IOS</span>
-                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Server</span>
+                        <span class="tech-tag">Bash Scripting</span>
+                        <span class="tech-tag">System Administration</span>
+                        <span class="tech-tag">Performance Analytics</span>
+                        <span class="tech-tag">Monitoring</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/yourusername/project1" class="project-btn" target="_blank" rel="noopener noreferrer">
@@ -83,7 +138,7 @@
                     <img src="project2.png" alt="Enterprise Network Design Lab">
                 </div>
                 <div class="project-content">
-                    <h3>Enterprise Network Design Lab</h3>
+                    <h3 class="modal-trigger" data-modal="designLabModal">Enterprise Network Design Lab</h3>
                     <p class="project-description">Designed and implemented a multi-site enterprise network topology in GNS3 featuring OSPF routing, inter-VLAN routing, DHCP services, and ACLs. Configured redundancy using HSRP and implemented network security best practices.</p>
                     <div class="project-tech">
                         <span class="tech-tag">GNS3</span>
@@ -107,7 +162,7 @@
                     <img src="project3.png" alt="Network Monitoring Dashboard">
                 </div>
                 <div class="project-content">
-                    <h3>Network Monitoring Dashboard</h3>
+                    <h3 class="modal-trigger" data-modal="monitoringModal">Network Monitoring Dashboard</h3>
                     <p class="project-description">Built comprehensive network monitoring solution using SNMP and Python to collect device metrics. Implemented real-time visualization of network health, bandwidth utilization, and automated alerting for network anomalies.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -126,6 +181,252 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal for Network Monitoring Dashboard -->
+        <div id="monitoringModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Network Monitoring Dashboard</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-image">
+                        <img src="project3.png" alt="Network Monitoring Dashboard">
+                    </div>
+                    <div class="modal-project-details">
+                        <p class="project-description">Built comprehensive network monitoring solution using SNMP and Python to collect device metrics. Implemented real-time visualization of network health, bandwidth utilization, and automated alerting for network anomalies.</p>
+
+                        <h3>Technologies Used:</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SNMP</span>
+                            <span class="tech-tag">Monitoring</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Visualization</span>
+                            <span class="tech-tag">Alerting</span>
+                        </div>
+
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Real-time network device monitoring</li>
+                            <li>Bandwidth utilization tracking</li>
+                            <li>Automated anomaly detection</li>
+                            <li>Customizable alerting system</li>
+                            <li>Historical data analysis</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project3" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Server Monitoring -->
+        <div id="backupModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Server Monitoring</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-details">
+                        <p class="project-description">Comprehensive Linux server monitoring solution featuring real-time system health reporting, performance analytics, and automated alerting. Implements custom scripts for monitoring CPU, memory, disk, and network usage with detailed logging and incident response capabilities.</p>
+
+                        <h3>Technologies Used:</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Bash Scripting</span>
+                            <span class="tech-tag">System Administration</span>
+                            <span class="tech-tag">Performance Analytics</span>
+                            <span class="tech-tag">Monitoring</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Real-time system health reporting</li>
+                            <li>Performance analytics and metrics</li>
+                            <li>Automated alerting system</li>
+                            <li>Disk I/O and network monitoring</li>
+                            <li>Process hierarchy analysis</li>
+                            <li>Memory usage tracking</li>
+                            <li>Security log analysis</li>
+                            <li>Incident response documentation</li>
+                        </ul>
+
+                        <h3>Project Gallery</h3>
+                        <div class="vertical-gallery-container">
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/SS/Pasted image.png" alt="Initial Server Connection" class="gallery-image" onclick="openLightbox('/MonitoringServer/SS/Pasted image.png', 'Initial Server Connection')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Initial Server Connection</div>
+                                    <div class="gallery-explanation"> Secure SSH access to the monitoring server using port 2223.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/dd command.png" alt="Disk Performance & I/O Testing" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/dd command.png', 'Disk Performance & I/O Testing')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Disk Performance & I/O Testing</div>
+                                    <div class="gallery-explanation">Using dd to measure raw disk I/O speed, achieving 652 MB/s write performance with direct I/O flag.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/health-check.png" alt="System Health Report Under Load" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/health-check.png', 'System Health Report Under Load')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">System Health Report Under Load</div>
+                                    <div class="gallery-explanation">Health report captured during a CPU stress test, showing high load averages and active stress-ng processes.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/iostat output.png" alt="Disk I/O Analysis" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/iostat output.png', 'Disk I/O Analysis')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Disk I/O Analysis</div>
+                                    <div class="gallery-explanation">Detailed I/O statistics per device using iostat, including reads/writes per second, queue lengths, and utilization percentages.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/log-report.png" alt="Security & Log Analysis" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/log-report.png', 'Security & Log Analysis')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Security & Log Analysis</div>
+                                    <div class="gallery-explanation"> Automated log scanning showing failed login attempts and service errors over the last hour.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/network stats.png" alt="Network Performance & Connectivity" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/network stats.png', 'Network Performance & Connectivity')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Network Performance & Connectivity</div>
+                                    <div class="gallery-explanation">Network interface statistics, active connections, routing table, and traffic history via vnstat.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/stress-test.png" alt="Controlled Stress Testing" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/stress-test.png', 'Controlled Stress Testing')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Controlled Stress Testing</div>
+                                    <div class="gallery-explanation">Executing stress-ng to simulate high CPU load, measuring system resilience and performance metrics.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/Pasted image.png" alt="Baseline System Health Report" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/Pasted image.png', 'Baseline System Health Report')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Baseline System Health Report</div>
+                                    <div class="gallery-explanation">First health report showing idle system with zero load and 35% disk usage.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/Pasted image (2).png" alt="Process Hierarchy & Service Analysis" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/Pasted image (2).png', 'Process Hierarchy & Service Analysis')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Process Hierarchy & Service Analysis</div>
+                                    <div class="gallery-explanation">Process tree visualization and service status monitoring.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Logs/Pasted image (3).png" alt="Memory Usage Analysis" class="gallery-image" onclick="openLightbox('/MonitoringServer/Logs/Pasted image (3).png', 'Memory Usage Analysis')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Memory Usage Analysis</div>
+                                    <div class="gallery-explanation">Top memory-consuming processes identified after script debugging.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Scripts/Pasted image (2).png" alt="System Health Reporter" class="gallery-image" onclick="openLightbox('/MonitoringServer/Scripts/Pasted image (2).png', 'System Health Reporter')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">System Health Reporter</div>
+                                    <div class="gallery-explanation">Comprehensive system snapshot capturing uptime, load averages, memory/disk usage, and top resource-consuming processes.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Scripts/Pasted image.png" alt=" Process Analyzer" class="gallery-image" onclick="openLightbox('/MonitoringServer/Scripts/Pasted image.png', ' Process Analyzer')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption"> Process Analyzer</div>
+                                    <div class="gallery-explanation">Process hierarchy visualization and service health monitoring with running process counts.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Scripts/Pasted image (3).png" alt="Network Analysis" class="gallery-image" onclick="openLightbox('/MonitoringServer/Scripts/Pasted image (3).png', 'Network Analysis')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Network Analysis</div>
+                                    <div class="gallery-explanation">Network interface monitoring, connection tracking, routing table inspection, and historical traffic analysis.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Scripts/Pasted image (4).png" alt="Log Analyzer" class="gallery-image" onclick="openLightbox('/MonitoringServer/Scripts/Pasted image (4).png', 'Log Analyzer')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Log Analyzer</div>
+                                    <div class="gallery-explanation">Automated security log scanning with failed login detection, error aggregation, and critical disk usage alerts.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Scripts/Pasted image (5).png" alt="Alerting Engine" class="gallery-image" onclick="openLightbox('/MonitoringServer/Scripts/Pasted image (5).png', 'Alerting Engine')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Alerting Engine</div>
+                                    <div class="gallery-explanation">Proactive alerting system that monitors load, memory, and disk usage against configurable thresholds.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MonitoringServer/Scripts/Pasted image (6).png" alt="Incident Response" class="gallery-image" onclick="openLightbox('/MonitoringServer/Scripts/Pasted image (6).png', 'Incident Response')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Incident Response</div>
+                                    <div class="gallery-explanation">Automated incident documentation system that captures system state during issues for post-mortem analysis.</div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Enterprise Network Design Lab -->
+        <div id="designLabModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Enterprise Network Design Lab</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-image">
+                        <img src="project2.png" alt="Enterprise Network Design Lab">
+                    </div>
+                    <div class="modal-project-details">
+                        <p class="project-description">Designed and implemented a multi-site enterprise network topology in GNS3 featuring OSPF routing, inter-VLAN routing, DHCP services, and ACLs. Configured redundancy using HSRP and implemented network security best practices.</p>
+
+                        <h3>Technologies Used:</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">GNS3</span>
+                            <span class="tech-tag">OSPF</span>
+                            <span class="tech-tag">VLANs</span>
+                            <span class="tech-tag">Cisco</span>
+                            <span class="tech-tag">HSRP</span>
+                            <span class="tech-tag">ACLs</span>
+                        </div>
+
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Multi-site network design</li>
+                            <li>OSPF dynamic routing</li>
+                            <li>Inter-VLAN routing</li>
+                            <li>DHCP services</li>
+                            <li>Network redundancy (HSRP)</li>
+                            <li>Security with ACLs</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project2" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section id="certifications" class="certifications-detail">
             <h2>Certifications</h2>
@@ -161,5 +462,97 @@
             <p>&copy; 2025. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        // Modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get modal elements
+            const modals = document.querySelectorAll('.modal');
+            const triggers = document.querySelectorAll('.modal-trigger');
+            const closeButtons = document.querySelectorAll('.close');
+
+            // Open modal when trigger is clicked
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const modalId = this.getAttribute('data-modal');
+                    const modal = document.getElementById(modalId);
+
+                    if (modal) {
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+                    }
+                });
+            });
+
+            // Close modal when close button is clicked
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const modal = this.closest('.modal');
+                    if (modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = ''; // Re-enable scrolling
+                    }
+                });
+            });
+
+            // Close modal when clicking outside the modal content
+            modals.forEach(modal => {
+                modal.addEventListener('click', function(event) {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    modals.forEach(modal => {
+                        if (window.getComputedStyle(modal).display === 'block') {
+                            modal.style.display = 'none';
+                            document.body.style.overflow = '';
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation();">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script>
+        // Existing modal functionality code remains here
+
+        // Lightbox functionality
+        function openLightbox(imageSrc, caption) {
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightboxImage').src = imageSrc;
+            document.getElementById('lightboxCaption').textContent = caption;
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = ''; // Re-enable scrolling
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const lightbox = document.getElementById('lightbox');
+                if (window.getComputedStyle(lightbox).display === 'flex') {
+                    closeLightbox();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
