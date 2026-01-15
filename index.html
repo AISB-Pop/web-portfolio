@@ -25,15 +25,14 @@
                 <img src="profile.jpg" alt="JPF Bedaño" class="profile-photo">
                 <p class="hero-greeting">Hey, I'm</p>
                 <h1 class="hero-name">JPF BEDAÑO</h1>
-                <p class="hero-title">Aspiring Network Engineer</p>
-                <p class="hero-description">Fourth-year IT student specializing in network infrastructure, automation, and Cisco technologies.</p>
+                <p class="hero-title">Systems Support Administrator</p>                
                 <a href="#about" class="cta-button">Learn More</a>
             </div>
         </section>
 
         <section id="about" class="about">
             <h2>About</h2>
-            <p>Fourth-year Information Technology student at FEU Roosevelt specializing in network engineering and automation. CCNA certified with hands-on experience in routing, switching, and Python-based network automation. Passionate about designing, implementing, and optimizing enterprise network infrastructure. Seeking network engineering internship opportunities to apply technical skills in real-world network environments.</p>
+            <p>Final-year IT student with hands-on experience in network infrastructure and systems administration through academic projects and labs. Skilled in automation, virtualization, and system support.</p>
 
             <div class="about-details">
                 <div class="detail-item">
@@ -51,43 +50,31 @@
                 <div class="skill-category">
                     <h3>Networking</h3>
                     <ul class="skill-list">
-                        <li>TCP/IP</li>
-                        <li>Routing (OSPF)</li>
+                        <li>TCP/IP</li>                        
                         <li>Switching</li>
                         <li>VLANs</li>
-                        <li>Network Troubleshooting</li>
-                        <li>Firewalls</li>                       
+                         <li>Routing(Static, OSPF)</li>
+                        <li>Network Troubleshooting</li>                                           
                         
                     </ul>
                 </div>
-
-                <div class="skill-category">
-                    <h3>Network Automation</h3>
-                    <ul class="skill-list">
-                        <li>Python (Netmiko, Paramiko)</li>
-                        <li>Ansible</li>
-                        <li>YAML</li>
-                        <li>REST APIs</li>
-                        <li>Configuration Management</li>                        
-                    </ul>
-                </div>
-
+               
                 <div class="skill-category">
                     <h3>Network Tools</h3>
                     <ul class="skill-list">                        
                         <li>GNS3</li>
-                        <li>Packet Tracer</li>
-                        <li>SSH</li>                        
+                        <li>Packet Tracer</li>                                           
                         <li>Network Monitoring</li>
                                                 
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Operating Systems</h3>
+                    <h3>Operating Systems and Platforms</h3>
                     <ul class="skill-list">
-                        <li>Linux</li>
-                        <li>Windows</li>
+                        <li>Linux: System Administration, Bash Scripting</li>
+                        <li>Windows: Windows Server Administration</li>
+                        <li>Virtualization(QEMU/KVM)</li>
                                                
                     </ul>
                 </div>
@@ -97,9 +84,8 @@
                     <ul class="skill-list">
                         <li>VPN</li>
                         <li>Access Control Lists</li>
-                        <li>Network Segmentation</li>
-                        <li>Encryption</li>
-                        <li>Penetration Testing</li>
+                        <li>Network Segmentation</li>                                                
+                        <li>Firewalls</li>    
                     </ul>
                 </div>                
             </div>
@@ -135,16 +121,15 @@
 
             <div class="project-item">
                 <div class="project-image">
-                    <img src="project2.png" alt="Enterprise Network Design Lab">
+                    <img src="/MySQL-Server/scripts/mysql-server-in4system.jpg" alt="MySQL Backup and Recovery Setup">
                 </div>
                 <div class="project-content">
-                    <h3 class="modal-trigger" data-modal="designLabModal">Enterprise Network Design Lab</h3>
-                    <p class="project-description">Designed and implemented a multi-site enterprise network topology in GNS3 featuring OSPF routing, inter-VLAN routing, DHCP services, and ACLs. Configured redundancy using HSRP and implemented network security best practices.</p>
+                    <h3 class="modal-trigger" data-modal="mysqlBackupModal">MySQL Backup and Recovery Setup</h3>
+                    <p class="project-description">I developed a complete MySQL backup and recovery automation system on Ubuntu Server. The project involved creating robust bash scripts for database backups, implementing cron job scheduling.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">GNS3</span>
-                        <span class="tech-tag">OSPF</span>
-                        <span class="tech-tag">VLANs</span>
-                        <span class="tech-tag">Cisco</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Database Administration</span>                                        
+                        <span class="tech-tag">Automation</span>                        
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/yourusername/project2" class="project-btn" target="_blank" rel="noopener noreferrer">
@@ -154,7 +139,7 @@
                             View Code
                         </a>
                     </div>
-                </div>
+                </div> 
             </div>
 
             <div class="project-item">
@@ -428,14 +413,159 @@
             </div>
         </div>
 
+        <!-- Modal for MySQL Backup and Recovery Setup -->
+        <div id="mysqlBackupModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>MySQL Backup and Recovery Setup</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-details">
+                        <p class="project-description">MySQL database backup and recovery solution featuring automated backup scripting, scheduled execution, and comprehensive disaster recovery procedures. The system includes backup verification, restoration capabilities, and monitoring tools to ensure data integrity and availability.</p>
+
+                        <h3>Technologies Used:</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bash Scripting</span>
+                            <span class="tech-tag">Database Administration</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">Cron Scheduling</span>
+                            <span class="tech-tag">Data Recovery</span>
+                        </div>
+
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Automated backup scripting with error handling</li>
+                            <li>Database schema design and implementation</li>
+                            <li>Secure backup file creation and management</li>
+                            <li>Automated restoration procedures</li>
+                            <li>Scheduled backup execution with cron</li>
+                            <li>Comprehensive backup verification</li>
+                            <li>Disaster recovery simulation and testing</li>
+                            <li>System health monitoring and validation</li>
+                        </ul>
+
+                        <h3>Project Gallery</h3>
+                        <div class="vertical-gallery-container">
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (2).png" alt="Backup Script Development" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (2).png', 'Backup Script Development')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Backup Script Development</div>
+                                    <div class="gallery-explanation">Developing the core backup logic with MySQL status checks and conditional database access handling.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image.png" alt="Setting Script Permissions" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image.png', 'Setting Script Permissions')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Setting Script Permissions</div>
+                                    <div class="gallery-explanation">Setting executable permissions for the backup script to ensure proper automation functionality.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (3).png" alt="Demo Database Schema Design" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (3).png', 'Demo Database Schema Design')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Demo Database Schema Design</div>
+                                    <div class="gallery-explanation">Creating a comprehensive demo database schema with realistic business entities for backup testing.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (4).png" alt="Database Creation and Verification" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (4).png', 'Database Creation and Verification')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Database Creation and Verification</div>
+                                    <div class="gallery-explanation">Successful execution of demo database creation with immediate data verification output.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (5).png" alt="First Automated Backup Execution" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (5).png', 'First Automated Backup Execution')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">First Automated Backup Execution</div>
+                                    <div class="gallery-explanation">Initial successful run of the automated backup system with comprehensive logging and validation.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (6).png" alt="Backup File Verification" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (6).png', 'Backup File Verification')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Backup File Verification</div>
+                                    <div class="gallery-explanation">Verifying successful backup file creation with proper naming convention and metadata storage.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (7).png" alt="MySQL Daily Backup in Action" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (7).png', 'MySQL Daily Backup in Action')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">MySQL Daily Backup in Action</div>
+                                    <div class="gallery-explanation">Automated daily MySQL backup execution – clean, compressed, and rotation-managed.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (8).png" alt="Restore Script Development" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (8).png', 'Restore Script Development')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Restore Script Development</div>
+                                    <div class="gallery-explanation">Developing the restore functionality with color-coded logging and interactive backup listing.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (9).png" alt="Restore Script Permission Configuration" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (9).png', 'Restore Script Permission Configuration')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Restore Script Permission Configuration</div>
+                                    <div class="gallery-explanation">Setting executable permissions for the restore script to enable disaster recovery operations.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (10).png" alt="Cron Job Configuration" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (10).png', 'Cron Job Configuration')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Cron Job Configuration</div>
+                                    <div class="gallery-explanation">Setting up automated scheduling with cron to run backups every 10 minutes for demonstration purposes.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (11).png" alt="Cron Service Health Check" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (11).png', 'Cron Service Health Check')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Cron Service Health Check</div>
+                                    <div class="gallery-explanation">Verifying cron daemon status – ensuring scheduled backup reliability.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (12).png" alt="Recovery Demonstration - Part 1" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (12).png', 'Recovery Demonstration - Part 1')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Recovery Demonstration - Part 1</div>
+                                    <div class="gallery-explanation">Executing the disaster recovery demo: Simulating data loss with foreign key constraint awareness.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (13).png" alt="Recovery Demonstration - Part 2" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (13).png', 'Recovery Demonstration - Part 2')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Recovery Demonstration - Part 2</div>
+                                    <div class="gallery-explanation">Successful restoration with data comparison showing complete recovery from simulated disaster.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (14).png" alt="Monitoring Script Development" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (14).png', 'Monitoring Script Development')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Monitoring Script Development</div>
+                                    <div class="gallery-explanation">Creating health check monitoring with backup validation, age verification, and disk space analysis.</div>
+                                </div>
+                            </div>
+                            <div class="vertical-gallery-item">
+                                <img src="/MySQL-Server/scripts/Pasted image (15).png" alt="Backup System Health Check Results" class="gallery-image" onclick="openLightbox('/MySQL-Server/scripts/Pasted image (15).png', 'Backup System Health Check Results')">
+                                <div class="gallery-content">
+                                    <div class="gallery-caption">Backup System Health Check Results</div>
+                                    <div class="gallery-explanation">Comprehensive backup system health report showing all components operational and within parameters.</div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section id="certifications" class="certifications-detail">
-            <h2>Certifications</h2>
+            <h2>Certifications and Training</h2>
             <div class="cert-item">
                 <div class="cert-header">
-                    <h3>Cisco Certified Network Associate (CCNA)</h3>
+                    <h3>CCNA: Switching, Routing, and Wireless Essentials (SRWE)</h3>
                     <a href="https://www.credly.com/badges/2143b2c1-afda-4186-9424-46fd00f2390f" class="badge-link" target="_blank" rel="noopener noreferrer">View Badge</a>
-                </div>
-                <p class="cert-description">Industry-recognized certification validating knowledge of network fundamentals, IP connectivity, security fundamentals, and automation.</p>
+                </div>              
             </div>
         </section>
 
@@ -447,13 +577,13 @@
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                         <polyline points="22,6 12,13 2,6"></polyline>
                     </svg>
-                    <span>aishield73@gmail.com</span>
+                    <span>Email</span>
                 </a>
                 <a href="https://github.com/AISB-Pop" class="contact-item" target="_blank" rel="noopener noreferrer" title="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                     </svg>
-                    <span>AISB-Pop</span>
+                    <span>github</span>
                 </a>
             </div>
         </section>
